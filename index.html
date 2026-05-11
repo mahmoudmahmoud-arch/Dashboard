@@ -226,7 +226,7 @@
     <div class="lw-grid">
       <div class="lw-card"><div class="lw-card-label">Total Chats</div><div class="lw-card-val">4,897</div><div class="lw-card-sub">Mon–Sun WK19</div></div>
       <div class="lw-card"><div class="lw-card-label">Team CSAT</div><div class="lw-card-val" style="color:var(--yellow)">4.722</div><div class="lw-card-sub">Good · excl. 0s</div></div>
-      <div class="lw-card"><div class="lw-card-label">Team Avg AHT</div><div class="lw-card-val" style="color:var(--orange)">1,175s</div><div class="lw-card-sub">19.6 min · Need Improvement</div></div>
+      <div class="lw-card"><div class="lw-card-label">Team Avg AHT</div><div class="lw-card-val" style="color:var(--orange)">1,252s</div><div class="lw-card-sub">19.6 min · Need Improvement</div></div>
       <div class="lw-card"><div class="lw-card-label">Active Agents</div><div class="lw-card-val" style="color:var(--accent2)">40</div><div class="lw-card-sub">unique agents WK19</div></div>
       <div class="lw-card"><div class="lw-card-label">Best CSAT Day</div><div class="lw-card-val" style="color:var(--green)">Sat 09</div><div class="lw-card-sub">4.796 · best CSAT day</div></div>
     </div>
@@ -688,7 +688,7 @@ function renderWtd(){
   // Update summary badges with correct WK19 totals
   document.getElementById('wtdChats').textContent='4,897';
   document.getElementById('wtdCsat').textContent='4.722';
-  document.getElementById('wtdAht').textContent='1,175s (19.6m)';
+  document.getElementById('wtdAht').textContent='1,252s (19.6m)';
 
   body.innerHTML=data.map((a,i)=>{
     const ac=ahtColor(a.aht),cc=csatColor(a.csat),vc=availColor(a.avail);
